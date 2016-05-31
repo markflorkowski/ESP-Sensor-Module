@@ -9,6 +9,6 @@ This is the first iteration of the code, where a user specifies the following at
   - Publish topic
   - Subscribe topic
 
-Once compiled and run on the ESP8266, the program connects to the MQTT broker, and will publish "ON" to the publish topic when the PIR sensor is triggered, and "OFF" after 5 seconds. The program also notifies the user of successful/unsuccessful connection via an LED, as well as an audible tone. 
+Once compiled and run on the ESP8266, the program connects to the MQTT broker, and will publish "ON" to the publish topic when the PIR sensor is triggered, and "OFF" 5 seconds after the sensor is triggered. The program also notifies the user of successful/unsuccessful connection via an LED, as well as an audible tone. 
 
 When a message of the format "BUZZER ON xxxx" is recieved on the subscribed topic, the speaker will produce a tone of xxxx Hz until a message of the format "BUZZER OFF" is recieved.  When a message of the format "BEEPER ON xxxx" is recieved on the subscribed topic, the speaker will produce beeping at xxxx Hz until a message of the format "BUZZER OFF" is recieved. 
